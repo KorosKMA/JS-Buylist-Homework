@@ -43,6 +43,7 @@ body {
     background-color: rgba(0,0,0,.15);
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     width: 95%;
+    min-width: 412px!important;
     padding-top: 100px;
     margin: 0;
     margin-left: auto;
@@ -107,7 +108,7 @@ h3 {
 }
 
 .text-input-button {
-    position: absolute;
+    position: absolute!important;
     border: 1px solid #2185D0;
     border-left: none;
     border-top-right-radius: 3px;
