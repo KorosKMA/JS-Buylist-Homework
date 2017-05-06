@@ -11,39 +11,11 @@
         <div class = "box">
             <div class = "segment">
                 <div class= "input-field">
-                    <input type= "text" placeholder= "Назва товару"/>
+                    <input type= "text" placeholder= "Назва товару" value=""/>
                     <button class= "text-input-button" data-tooltip="Розмістити товар у списку">Додати</button>
                 </div>
             </div>
-            <div class = "segment">
-                <div class = "title">Помідори
-                </div><div class = "add-buttons" ><button class = "minus-button" data-tooltip="Зменшити кількість">-</button>
-                <span class = "quantity">1</span>
-                <button class = "plus-button" data-tooltip="Збільшити кількість">+</button>
-                </div><div class = "buy-buttons"><button class= "remove-button" data-tooltip="Видалити">
-                <div class="remove-icon"></div></button>
-                <button class= "buy-button" data-tooltip="Позначити купленим">Куплено</button>
-                </div>
-            </div>
-            <div class = "segment">
-                <div class = "title">Печиво
-                </div><div class = "add-buttons" ><button class = "minus-button" data-tooltip="Зменшити кількість">-</button>
-                <span class = "quantity">1</span>
-                <button class = "plus-button" data-tooltip="Збільшити кількість">+</button>
-                </div><div class = "buy-buttons"><button class= "remove-button" data-tooltip="Видалити">
-                <div class="remove-icon"></div></button>
-                <button class= "buy-button" data-tooltip="Позначити купленим">Куплено</button>
-                </div>
-            </div>
-            <div class = "segment">
-                <div class = "title">Сир
-                </div><div class = "add-buttons" ><button class = "minus-button" data-tooltip="Зменшити кількість">-</button>
-                <span class = "quantity">1</span>
-                <button class = "plus-button" data-tooltip="Збільшити кількість">+</button>
-                </div><div class = "buy-buttons"><button class= "remove-button" data-tooltip="Видалити">
-                <div class="remove-icon"></div></button>
-                <button class= "buy-button" data-tooltip="Позначити купленим">Куплено</button>
-                </div>
+            <div class="list-of-items">
             </div>
         </div>
     </div>
@@ -52,24 +24,14 @@
             <div class = "segment">
                 <h3>Залишилося</h3>
             </div>
-            <div class = "segment">
-                <span class = "label">
-                    Помідори
-                    <span class = "label circle">1</span>
-                </span>
-                <span class = "label">
-                    Печиво
-                    <span class = "label circle">1</span>
-                </span>
-                <span class = "label">
-                    Сир
-                    <span class = "label circle">1</span>
-                </span>
+            <div class = "segment not-bought-labels">
+
             </div>
             <div class = "segment">
                 <h3>Куплено</h3>
             </div>
-            <div class = "segment">
+            <div class = "segment bought-labels">
+
             </div>
         </div>
     </div>
@@ -78,5 +40,30 @@
         <div class="text">Created by:</div>
         <div class="text">Roman Losev</div>
     </div>
+    <div class="one-item hidden">
+        <div class = "segment hidden">
+            <div class = "title"></div>
+            <div class = "add-buttons" >
+                <button class = "minus-button inactive" data-tooltip="Зменшити кількість">-</button>
+                <span class = "quantity">1</span>
+                <button class = "plus-button" data-tooltip="Збільшити кількість">+</button>
+            </div>
+            <div class = "buy-buttons">
+                <button class= "remove-button" data-tooltip="Видалити">
+                    <div class="remove-icon"></div>
+                </button>
+                <button class= "buy-button" data-tooltip="Позначити купленим">Куплено</button>
+            </div>
+        </div>
+    </div>
+    <div class="one-label hidden">
+         <span class = "label hidden">
+             <div class = "label-title">
+             </div>
+             <span class = "label circle">1</span>
+         </span>
+    </div>
+
+<script	type="text/javascript" src="main.js">	</script>
 </body>
 </html>

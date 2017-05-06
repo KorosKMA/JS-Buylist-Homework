@@ -33,17 +33,23 @@
     }
 }
 
-.style1 {
-    color: green;
-    font-family: cursive;
-    font-size: 100px;
+.hidden{
+    display: none!important;
+}
+
+.invisible{
+    visibility: hidden!important;
+}
+
+.crossed{
+    text-decoration: line-through!important;
 }
 
 body {
     background-color: rgba(0,0,0,.15);
     font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
     width: 95%;
-    min-width: 412px!important;
+    min-width: 416px!important;
     padding-top: 100px;
     margin: 0;
     margin-left: auto;
@@ -88,7 +94,7 @@ h3 {
     border-bottom: none;
 }
 
-.segment input[type=text] {
+.input-field input[type=text] {
     font-size: 1em;
     padding-bottom: .5em;
     padding-top: .5em;
@@ -103,7 +109,7 @@ h3 {
 .input-field {
     position: relative;
     border-radius: 3px;
-    margin-right: none;
+    margin-right: 0;
     width: 100%;
 }
 
@@ -126,10 +132,20 @@ h3 {
     right: 0;
 }
 
+.red-placeholder::-webkit-input-placeholder{
+    color: red;
+}
+
 .title {
     display: inline-block;
     width: 25%;
     border: 0;
+}
+
+.segment .title-change{
+    width: 25%!important;
+    margin: -4px!important;
+    margin-left: 0px!important;
 }
 
 .add-buttons {
@@ -157,8 +173,16 @@ h3 {
 }
 
 .minus-button {
-    background-color: #FFB3B3;
+    background-color: #FF6363;
     padding-bottom: .3em;
+}
+
+.minus-button.inactive{
+    background-color: #FFB3B3!important;
+}
+
+.plus-button.inactive{
+    background-color: #b3ffb3 !important;
 }
 
 .minus-button[data-tooltip]:before, .plus-button[data-tooltip]:before{
@@ -215,7 +239,7 @@ h3 {
     border: none;
     background-color: #DB2828;
     color: rgba(0,0,0,.6);
-    margin: none;
+    margin: 0;
     padding: 1.6em;
     float: right;
     text-align:center;
@@ -253,6 +277,7 @@ h3 {
 .label {
     margin-top: 1px;
     margin-bottom: 1px;
+    margin-right: 2px;
     font-size: .64285714rem;
     padding: 3%;
     padding-bottom: 1%;
@@ -262,7 +287,8 @@ h3 {
     background-color: #E8E8E8;
 }
 
-.label .circle {
+.label.circle {
+    margin-right: 0!important;
     min-width: 2em;
     min-height: 2em;
     padding: .4em;
@@ -272,6 +298,10 @@ h3 {
     font-weight: bolder;
     border-radius: 500rem;
     background-color: #F2711C;
+}
+
+.label-title{
+    display: inline;
 }
 
 .badge{
